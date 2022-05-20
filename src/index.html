@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <h1 class="title">App ToDo list</h1>
+    <div id="message" class="container_message"></div>
+
+    <main class="container">
+      <div class="container__card">
+        <h2 class="card_title">Add a product</h2>
+
+        <form action="" id="formContainer" class="container__form">
+          <input
+            id="inputName"
+            class="form_input form__name"
+            type="text"
+            placeholder="Product Name"
+          />
+          <input
+            id="inputItem"
+            class="form_input form__product"
+            type="number"
+            placeholder="Number of Items"
+          />
+          <input
+            id="inputStore"
+            class="form_input form__store"
+            type="text"
+            placeholder="Store"
+          />
+          <input
+            id="inputPrice"
+            class="form_input form__price"
+            type="number"
+            placeholder="Price"
+            step="0.1"
+          />
+          <input
+            id="inputSubmit"
+            class="form__submit"
+            type="submit"
+            value="Save"
+          />
+        </form>
+      </div>
+
+      <div>
+        <div id="productBox" class="product_box"></div>
+      </div>
+    </main>
+
+    <script src="./app/app.js"></script>
+  </body>
+</html>
